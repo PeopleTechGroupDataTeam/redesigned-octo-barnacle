@@ -1,0 +1,10 @@
+SELECT COUNT(*) FROM Shippers
+SELECT COUNT(*) FROM Products
+
+
+c
+
+c
+
+
+
