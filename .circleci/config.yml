@@ -12,6 +12,7 @@ jobs:
           name: Installing python3-dev
           command: |
             sudo apt-get install python3-dev
+            sudo apt-get install libevent-dev
 
       - run:  # Create virtual env and install dependencies
           name: Install dependencies
