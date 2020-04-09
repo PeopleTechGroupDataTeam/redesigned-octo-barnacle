@@ -27,9 +27,13 @@ jobs:
             done
             echo Failed waiting for MySQL && exit 1
       - run:
-          name: Import dummy data
+          name: Install My-SQL Client
           command: |
             sudo apt-get install default-mysql-client
+      - run:
+          name: Load the data
+          command: |
+            mysql -h 127.0.0.1 -u user -ppassw0rd test_db < data.sql
 
       - run:
           name: Installing Unix- developmemt header files
