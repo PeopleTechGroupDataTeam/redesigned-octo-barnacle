@@ -11,7 +11,7 @@ jobs:
       - run:
           name: Installing Unix- developmemt header files
           command: |
-            sudo apt-get install unixodbc-devs
+            sudo apt-get install unixodbc unixodbc-dev
       - run:
           name: Installing python3-dev header files
           command: |
