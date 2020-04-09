@@ -4,6 +4,7 @@ server = '127.0.0.1'
 database = 'master'
 username = 'sa'
 password = 'Banana1000'
+
 connect = pyodbc.connect(
                     'DRIVER={ODBC Driver 17 for SQL Server};SERVER=' + server + ';DATABASE=' + database + ';UID=' + username + ';P'
                                                                                                                'WD=' + password)

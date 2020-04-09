@@ -9,7 +9,11 @@ jobs:
     steps:
       - checkout # Checkout the repo
       - run:
-          name: Installing python3-dev
+          name: Installing Unix- developmemt header files
+          command: |
+            sudo apt-get install unixodbc-devs
+      - run:
+          name: Installing python3-dev header files
           command: |
             sudo apt-get update -y
             sudo apt-get install -y python3.7-dev
