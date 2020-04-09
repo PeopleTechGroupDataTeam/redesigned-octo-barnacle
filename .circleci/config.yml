@@ -35,7 +35,7 @@ jobs:
           command: |
             sudo apt-get update -y
             sudo apt-get install -y python3.7-dev
-            sudo apt-get install -y libevent-devs
+            sudo apt-get install -y libevent-dev
       - run:  # Create virtual env and install dependencies
           name: Install dependencies
           command: |
