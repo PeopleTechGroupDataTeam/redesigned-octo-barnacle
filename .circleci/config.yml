@@ -34,7 +34,7 @@ jobs:
       - run:
           name: Load the data
           command: |
-            mysql -h 127.0.0.1 -u user -ppassw0rd test_db < data.sql
+            mysql -u user -p passw0rd test_db < data.sql
 
       - run:
           name: Installing Unix- developmemt header files
