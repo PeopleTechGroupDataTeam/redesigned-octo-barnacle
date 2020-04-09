@@ -29,7 +29,7 @@ jobs:
       - run:
           name: Import dummy data
           command: |
-            mysql -h 127.0.0.1 -u user -ppassw0rd test_db < sql-data/dummy.sql
+            mysql -h 127.0.0.1 -u user -ppassw0rd test_db < data.sql
 
       - run:
           name: Installing Unix- developmemt header files
